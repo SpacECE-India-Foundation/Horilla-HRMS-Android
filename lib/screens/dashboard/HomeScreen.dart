@@ -38,6 +38,7 @@ import '../leaves/MyLeaveRequests.dart';
 import '../notification/NotificationScreen.dart';
 import '../onboarding/CandidatesViewScreen.dart';
 import '../onboarding/OnboardingViewScreen.dart';
+import '../payroll/PayrollDashboard.dart';
 import '../recruitment/RecruitmentCandidatesScreen.dart';
 import '../recruitment/RecruitmentInterviewsScreen.dart';
 import '../recruitment/RecruitmentOpenJobsScreen.dart';
@@ -387,6 +388,10 @@ void updateTitle(String newTitle) {
       'Compensatory Leave Requests': CompensatoryLeaveRequests(),
     });
       case 6:
+        return getSubMenuScreen(6, {
+          'Dashboard': PayrollDashboard(),
+
+        });
       case 7:
       case 8:
       case 9:
